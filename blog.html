@@ -4,11 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh - Blog</title><link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    /* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+*{
+        font-family: "Lexend", sans-serif;
+}
+
+</style>
 </head>
 <body>
 
 
+        <!-- header starts  -->
+        <header class="bg-yellow-50 px-3 md:px-10 xl:px-44 sticky top-0 z-10">
+
+
+            <!-- navbar for medium and large device  -->
+            <nav class="hidden md:flex py-4 justify-between items-center">
+                <a href="./index.html"> <button
+                        class="rounded-lg font-medium bg-[#B4F461] py-3 px-8 text-2xl hover:bg-[#b4f461c4] duration-300">Home</button></a>
+                <div class="flex justify-center items-center gap-3">
+                    <img src="./assets/logo.png" width="50px" alt="">
+                    <h3 class="text-3xl font-extrabold">Donate Bangladesh</h3>
+                </div>
+                <div class="flex justify-center items-center gap-3">
+                    <img src="./assets/coin.png" width="45px" alt="">
+                    <h4 class="text-2xl font-extrabold text-gray-500">5500 BDT</h4>
+                </div>
+            </nav>
     
+            <!-- navbar for small device  -->
+            <nav class=" py-4 px-6 flex flex-col md:hidden justify-between items-center">
+                <div class="flex mb-10 justify-between w-full">
+                    
+                    <div class="flex justify-center items-center gap-3">
+                        <img src="./assets/logo.png" width="50px" alt="">
+                        <h3 class="text-3xl font-extrabold">Donate Bangladesh</h3>
+                    </div>
+                    <a href="./blog.html"> <button
+                        class="rounded-lg font-medium bg-[#B4F461] py-3 px-8 text-2xl hover:bg-[#b4f461c4] duration-300">Blog</button></a>
+                </div>
+              
+                <div class="flex justify-center items-center gap-3">
+                    <img src="./assets/coin.png" width="45px" alt="">
+                    <h4 class="text-2xl font-extrabold text-gray-500">5500 BDT</h4>
+                </div>
+            </nav>
+    
+    
+            
+            
+        </header>
+        <!-- header ends  -->
+
+
+
+        <main class="px-3 md:px-10 xl:px-44 mb-20">
+
+<h1 class="text-center my-10 text-2xl font-extrabold ">Question/Answer :</h1>
+
+<!-- question 1  -->
+<h1 class="text- mt-10 text-xl font-semibold ">1.What is the Document Object Model (DOM) ?</h1>
+<p class="text-lg font-light text-gray-700">The Document Object Model (DOM) is a way for your browser to understand and control the content of a webpage. Think of it like a map or a guide to all the parts of a webpage, like headings, paragraphs, images, etc. </p>
+<p class="text-lg font-light text-gray-700 mt-3">When a webpage loads, the browser looks at the HTML and builds a tree that shows how all the parts of the page are related. Each part of the page, like a title or a picture, is a "node" or "object" on this tree. You can change what’s on the page using JavaScript. Want to make a button do something when clicked? Want to change text or add new elements? The DOM lets you do all that! </p>
+
+<!-- question 2  -->
+<h1 class="text- mt-10 text-xl font-semibold ">2.How do you select an element from the DOM ?</h1>
+<div class="text-lg font-light text-gray-700">
+<p>To pick an element from a webpage using JavaScript, you have a few simple ways:</p>
+   <ul class="list-inside list-disc mt-3">
+    <li> By ID: If the element has an ID (like a name tag), you can use getElementById(). IDs are unique, so this method picks only one element.</li>
+   <li> 
+    By Class: If the element has a class (like a label that can be shared), you can use getElementsByClassName(). This can pick more than one element because many elements can have the same class.</li>
+   <li> 
+    By Tag: If you want to select all elements of a certain type, like all div or p tags, you use getElementsByTagName(). This will pick all elements with that tag.</li>
+    
+    <li>
+        By CSS Selector: You can use querySelector() to pick the first element that matches a CSS rule, like an ID, class, or tag. If you want to select all matching elements, use querySelectorAll().
+    </li>
+   </ul>
+
+</div>
+
+
+<!-- question 3  -->
+<h1 class="text- mt-10 text-xl font-semibold ">3.What is event delegation in the context of the DOM, and why it is useful ?</h1>
+<p class="text-lg font-light text-gray-700">Event delegation is a way to handle events in the DOM by using a single event listener on a parent element, instead of adding multiple listeners to individual child elements.</p>
+<p class="text-lg font-light text-gray-700 mt-3">
+    Event delegation is a way to handle events in the DOM by using a single event listener on a parent element, instead of adding multiple listeners to individual child elements.
+  <span class="block font-semibold my-3">  Why is it useful?</span>
+    <span class="font-medium mt-3">Fewer event listeners:</span> Instead of adding a separate event listener to each child element, you just add one to the parent. This reduces memory usage and improves performance. <br>
+    <span class="font-medium mt-3"> Handles future elements:</span> If new child elements are added later, you don’t need to add new listeners. The parent can handle events for both current and future child elements.
+        <br><span class="font-medium mt-3">Example :</span>
+    Imagine you have a list of items, and you want something to happen when you click any item. Instead of adding a click listener to each item, you can put the listener on the list itself (the parent). The parent will know which item was clicked by checking where the event happened.
+    
+    Event delegation makes your code simpler and faster, especially when dealing with many elements.</p>
+
+
+    <!-- question 4  -->
+<h1 class="text- mt-10 text-xl font-semibold ">4.how do you manipulate an element's attributes and styles using DOM ?</h1>
+<p class="text-lg font-light text-gray-700">To change an element’s attributes and styles in the DOM:</p>
+<p class="text-lg font-light text-gray-700"><span class="block font-semibold my-3">If you want to change - src, href, id:</span>
+    <span class="font-medium">setAttribute():</span> This changes an attribute, like changing the source of an image or the link of a button. <br>
+    <span class="font-medium">Example:</span>  If you have an image, you can change its source like this: <br>
+    <span class="text-red-600 block">imageElement.setAttribute("src", "newImage.jpg");</span><br>
+    You can also change common attributes directly.
+    <span class="font-medium">Example:</span> Change an element's id:
+    <span class="text-red-600 block">element.id = "newId";</span>
+    <span class="block font-semibold my-3">Changing Styles (like color, size, background):</span>
+    <span class="font-medium"> style.property:</span> You can change how an element looks by using the style property.
+    <span class="font-medium"></span>Example:</span> Make text red:
+    <span class="text-red-600 block">element.style.color = "red";</span>
+    <span class="font-medium">classList:</span> You can add or remove classes that are defined in CSS.
+    <span class="font-medium block">Example:</span> Add a new class to the element:
+    <span class="text-red-600 block"> element.classList.add("newClass");</span>
+    Change attributes with setAttribute() or directly <span class="text-red-600"> (like element.id = "newId";)</span>.
+    Change styles with style <span class="text-red-600">(like element.style.color = "blue";)</span> or classList.</p>
+
+
+
+
+        </main>
+
+
+
     
 </body>
 </html>
