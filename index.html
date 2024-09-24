@@ -28,37 +28,18 @@
 
 
         <!-- navbar for medium and large device  -->
-        <nav class="hidden md:flex py-4 justify-between items-center">
-            <a href="./blog.html"> <button
-                    class="rounded-lg font-medium bg-[#B4F461] py-3 px-8 text-2xl hover:bg-[#b4f461c4] duration-300">Blog</button></a>
-            <div class="flex justify-center items-center gap-3">
-                <img src="./assets/logo.png" width="50px" alt="">
-                <h3 class="text-3xl font-extrabold">Donate Bangladesh</h3>
+        <nav class="flex py-4 justify-center md:justify-between items-center flex-wrap gap-3">
+            <a href="./blog.html" class="order-2 md:order-1"> <button
+                    class="rounded-lg font-medium bg-[#B4F461] py-2 md:py-3 px-3 md:px-8 text-xl md:text-2xl hover:bg-[#b4f461c4] duration-300">Blog</button></a>
+            <div class="flex justify-center items-center gap-3 order-1 md:order-2">
+                <img src="./assets/logo.png" class="w-[35px] md:w-[50px]" alt="">
+                <h3 class="text-xl md:text-3xl font-extrabold">Donate Bangladesh</h3>
             </div>
-            <div class="flex justify-center items-center gap-3">
-                <img src="./assets/coin.png" width="45px" alt="">
-                <h4 class="text-2xl font-extrabold text-gray-500" ><span id="totalAccountBalance">5500</span> BDT</h4>
-            </div>
-        </nav>
-
-        <!-- navbar for small device  -->
-        <nav class=" py-4 px-6 flex flex-col md:hidden justify-between items-center">
-            <div class="flex mb-10 justify-between w-full">
-                
-                <div class="flex justify-center items-center gap-3">
-                    <img src="./assets/logo.png" width="50px" alt="">
-                    <h3 class="text-3xl font-extrabold">Donate Bangladesh</h3>
-                </div>
-                <a href="./blog.html"> <button
-                    class="rounded-lg font-medium bg-[#B4F461] py-3 px-8 text-2xl hover:bg-[#b4f461c4] duration-300">Blog</button></a>
-            </div>
-          
-            <div class="flex justify-center items-center gap-3">
-                <img src="./assets/coin.png" width="45px" alt="">
-                <h4 class="text-2xl font-extrabold text-gray-500">5500 BDT</h4>
+            <div class="flex justify-center items-center gap-3 order-3">
+                <img src="./assets/coin.png" class="w-[35px] md:w-[45px]" alt="">
+                <h4 class="text-xl md:text-2xl font-extrabold text-gray-500" ><span id="totalAccountBalance">5500</span> BDT</h4>
             </div>
         </nav>
-
 
         
         
@@ -66,28 +47,31 @@
     <!-- header ends  -->
 
 
+
+
 <!-- blur div  -->
-    <div class="navbar  backdrop-blur-lg bg-opacity-50 sticky top-[5.3rem] z-10 py-10"></div>
+    <div class="navbar  backdrop-blur-lg bg-opacity-50 sticky top-[7rem] md:top-[5.3rem] z-10 py-4 md:py-10 flex justify-center items-center gap-5">
+              <!-- toggle button div start  -->
+              <div id="toggleBtnDiv" class="flex justify-center items-center gap-5">
+                <button class="rounded-lg ring-gray-300 font-medium bg-[#B4F461] py-3 px-4 md:px-8 text-xl md:text-2xl hover:bg-[#b4f461c4] duration-300" id="donationBtn">Donation</button>
+                <button class="rounded-lg ring-gray-300 font-medium py-3  ring-2 text-gray-500 px-4 md:px-8 text-xl md:text-2xl hover:bg-[#f4f4f4c4] duration-300 bg-white" id="historyBtn">History</button>
+            </div>
+            <!-- toggle button div end-  -->
+    </div>
+
+
+
 
 
 <!-- main section start  -->
     <main class="px-3 md:px-10 xl:px-44 text-center md:text-left">
 
 
-        <!-- toggle button div start  -->
-        <div id="toggleBtnDiv" class="flex justify-center gap-5 mt-10 mb-8">
-            <button class="rounded-lg ring-gray-300 font-medium bg-[#B4F461] py-3 px-8 text-2xl hover:bg-[#b4f461c4] duration-300" id="donationBtn">Donation</button>
-            <button class="rounded-lg ring-gray-300 font-medium py-3  ring-2 text-gray-500 px-8 text-2xl hover:bg-[#f4f4f4c4] duration-300" id="historyBtn">History</button>
-        </div>
-        <!-- toggle button div end-  -->
-
-
-
         <!-- card section starts  -->
         <section id="cardSection">
 
             <!-- card 1  -->
-<div class="border rounded-2xl p-8 flex items-center gap-8 flex-col md:flex-row mt-10">
+<div class="border rounded-2xl p-3 md:p-8 flex items-center gap-8 flex-col md:flex-row mt-10">
 <img src="./assets/noakhali.png" class="w-full h-full" alt="">
 
     <div class="flex flex-col md:justify-start md:items-start items-center justify-center space-y-5">
@@ -98,11 +82,11 @@
 <h3 class="font-bold text-2xl ">Donate for <span id="noakhaliHeading">Flood Relief in Noakhali, Bangladesh</span></h3>
 <p class="text-lg font-light text-gray-500">Recently, the devastating flood in Noakhali and surrounding regions left countless families without shelter, food, or basic necessities. As soon as the floods struck, this organization has mobilized its volunteers to deliver critical relief to those affected With the help of local communities and dedicated volunteers</p>
 <input type="text" placeholder="Write Donation Amount" id="floodNoakhaliInput" class=" input input-bordered w-full" />
-<button class="btn-wide w-full rounded-lg font-medium bg-[#B4F461] py-3 px-8 text-2xl hover:bg-[#b4f461c4] duration-300" id="floodNoakhaliBtn" >Donate Now</button>   
+<button class="btn-wide w-full rounded-lg font-medium bg-[#B4F461] py-3 text-xl md:text-2xl hover:bg-[#b4f461c4] duration-300" id="floodNoakhaliBtn" >Donate Now</button>   
 </div>
 </div>
             <!-- card 2  -->
-<div class="border rounded-2xl p-8 flex items-center gap-8 flex-col md:flex-row mt-20">
+<div class="border rounded-2xl p-3 md:p-8 flex items-center gap-8 flex-col md:flex-row mt-20">
 <img src="./assets/feni.png" class="w-full h-full" alt="">
 
     <div class="flex flex-col md:justify-start md:items-start items-center justify-center space-y-5">
@@ -113,11 +97,11 @@
 <h3 class="font-bold text-2xl " >Donate for <span id="feniHeading">Flood Relief in Feni,Bangladesh</span></h3>
 <p class="text-lg font-light text-gray-500">In the aftermath of the devastating floods in Feni, Comilla, Noakhali, and nearby regions, countless families have been left without shelter, food, or basic necessities. Responding swiftly to the crisis, our organization mobilized volunteers to deliver critical relief to those affected.</p>
 <input type="text" placeholder="Write Donation Amount" id="floodFeniInput" class=" input input-bordered w-full" />
-<button class="btn-wide w-full rounded-lg font-medium bg-[#B4F461] py-3 px-8 text-2xl hover:bg-[#b4f461c4] duration-300" id="floodFeniBtn">Donate Now</button>   
+<button class="btn-wide w-full rounded-lg font-medium bg-[#B4F461] py-3 text-xl md:text-2xl hover:bg-[#b4f461c4] duration-300" id="floodFeniBtn">Donate Now</button>   
 </div>
 </div>
             <!-- card 3  -->
-<div class="border rounded-2xl p-8 flex items-center gap-8 flex-col md:flex-row mt-20">
+<div class="border rounded-2xl p-3 md:p-8 flex items-center gap-8 flex-col md:flex-row mt-20">
 <img src="./assets/quota-protest.png" class="w-full h-full" alt="">
 
     <div class="flex flex-col md:justify-start md:items-start items-center justify-center space-y-5">
@@ -128,7 +112,7 @@
 <h3 class="font-bold text-2xl" id="quotaHeading">Aid for Injured in the Quota Movement</h3>
 <p class="text-lg font-light text-gray-500">In light of the recent Quota movement, many individuals have faced injuries and significant challenges. Your assistance is vital in providing medical care, rehabilitation, and essential supplies to those affected. By contributing, you ensure that injured individuals receive the necessary support and treatment during this difficult time.</p>
 <input type="text" placeholder="Write Donation Amount" id="quotaInput" class=" input input-bordered w-full" />
-<button class="btn-wide w-full rounded-lg font-medium bg-[#B4F461] py-3 px-8 text-2xl hover:bg-[#b4f461c4] duration-300" id='quotaBtn'>Donate Now</button>  
+<button class="btn-wide w-full rounded-lg font-medium bg-[#B4F461] py-3 text-xl md:text-2xl hover:bg-[#b4f461c4] duration-300" id='quotaBtn'>Donate Now</button>  
 </div>
 </div>
 
@@ -169,14 +153,14 @@
 
 
 <footer class="bg-yellow-50 py-20  mt-20 px-3 md:px-10 xl:px-44">
-   <div class="flex justify-between items-center">
+   <div class="flex justify-between items-center flex-col md:flex-row ">
     <div class="flex justify-center items-center gap-3">
         <img src="./assets/logo.png" width="30px" alt="">
         <h3 class="text-xl font-extrabold">Donate Bangladesh</h3>
     </div>
 <div>
-    <h3 class="">Developed by Fahima Akter</h3>
-<h3 class="text-right">©copyright-2024 </h3>
+    <h3 class="mt-5 md:mt-0">Developed by Fahima Akter</h3>
+<h3 class="text-center md:text-right ">©copyright-2024 </h3>
 </div>
    </div>
 </footer>

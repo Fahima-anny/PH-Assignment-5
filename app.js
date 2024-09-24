@@ -9,18 +9,18 @@ let quotaTotal = document.getElementById('quotaTotal') ;
 historyBtn.addEventListener("click",function(){
     displayDiv(historySection) ;
     historyBtn.classList.add('bg-[#B4F461]','hover:bg-[#b4f461c4]')
-    historyBtn.classList.remove('hover:bg-[#f4f4f4c4]','text-gray-500','ring-2')
+    historyBtn.classList.remove('hover:bg-[#f4f4f4c4]','text-gray-500','ring-2','bg-white')
     donationBtn.classList.remove('bg-[#B4F461]','hover:bg-[#b4f461c4]')
-    donationBtn.classList.add('text-gray-500','ring-2')
+    donationBtn.classList.add('text-gray-500','ring-2','bg-white')
 })
 
 // donate button 
 donationBtn.addEventListener("click",function(){
     displayDiv(cardSection) ;
     donationBtn.classList.add('bg-[#B4F461]','hover:bg-[#b4f461c4]')
-    donationBtn.classList.remove('text-gray-500','ring-2')
+    donationBtn.classList.remove('text-gray-500','ring-2','bg-white')
     historyBtn.classList.remove('bg-[#B4F461]','hover:bg-[#b4f461c4]')
-    historyBtn.classList.add('hover:bg-[#f4f4f4c4]','text-gray-500','ring-2')
+    historyBtn.classList.add('hover:bg-[#f4f4f4c4]','text-gray-500','ring-2','bg-white')
 })
 
 
